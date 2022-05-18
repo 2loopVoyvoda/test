@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.summonerCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 150px;
+  margin-left: -30px;
+}
+
+.summonerName {
+  letter-spacing: 2px;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 100;
+  margin: auto 0;
+  color: #e1e1e1;
+}
+
+.summonerBorder {
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+}
+
+.profileIcon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.summonerLevel {
+  position: absolute;
+  z-index: 1;
+  bottom: 14.5%;
+  font-size: 9px;
+  font-weight: 500;
+  color: #e1e1e1;
+}

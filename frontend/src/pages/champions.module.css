@@ -1,0 +1,209 @@
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e1e1e1;
+  margin-top: 100px;
+  animation: fadeIn ease 1.5s;
+}
+
+.searchIcon {
+  color: #e1e1e1;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 26px;
+  margin-left: -35px;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchContainer input {
+  padding: 14px 15px;
+  width: 30vw;
+  border: none;
+  background-color: rgb(43, 34, 58);
+  color: #e1e1e1;
+  border-radius: 8px;
+  z-index: 100;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+
+.searchContainer input:focus {
+  outline: none;
+  z-index: 100;
+  opacity: 1;
+}
+
+.searchContainer input::placeholder {
+  color: #e1e1e1;
+  font-weight: normal;
+  z-index: 100;
+}
+
+input[type='text'] {
+  font-size: 18px;
+}
+
+.rolesContainer {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.currentRole {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(43, 34, 58);
+  margin: 0px 5px 15px 5px;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.roleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7a6b83;
+  margin: 0px 5px 15px 5px;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.roleContainer:hover {
+  cursor: pointer;
+}
+
+.noHover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7a6b83;
+  margin: 0px 5px 15px 5px;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.roleImage {
+  width: 35px;
+  height: auto;
+}
+
+.rotateImage {
+  width: 35px;
+  height: auto;
+  transform: rotate(30deg);
+}
+
+.roleLabel {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.roleContainer label:hover {
+  cursor: pointer;
+}
+
+.championList {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.latestContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latestContainerAnimate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn ease 1.5s;
+}
+
+.latestImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 110px;
+  animation: fadeIn ease 1.5s;
+}
+
+.latestImage img {
+  margin: 10px 10px;
+  border-radius: 50%;
+  border: solid 2px #9865b6;
+}
+
+.latestImage img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.imageContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  max-width: 1280px;
+  margin-bottom: 100px;
+  animation: fadeIn ease 1.5s;
+}
+
+.imageContainer img {
+  margin: 10px 10px;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: solid 2px #9865b6;
+}
+
+.imageContainer img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.screenContainer {
+  display: flex;
+  direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: #e1e1e1;
+}
+
+.champName {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: -10px;
+  text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

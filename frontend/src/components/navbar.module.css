@@ -1,0 +1,288 @@
+.navbar {
+  width: auto;
+  min-width: 1200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  z-index: 100;
+}
+
+.navHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.navbarLogo {
+  color: #e1e1e1;
+  justify-self: start;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo {
+  width: 65px;
+  height: auto;
+}
+
+.navMenu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  list-style: none;
+  text-align: center;
+  width: 95vw;
+  justify-content: end;
+  font-weight: bold;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.navLinks:hover {
+  background-color: #7a6b83;
+  transition: all 0.2s ease-out;
+}
+
+.noLink:hover {
+  cursor: default;
+}
+
+.faBars {
+  color: #e1e1e1;
+}
+
+.faCaretDown {
+  margin-left: 5px;
+}
+
+.menuIcon {
+  display: none;
+}
+
+/* Storage container */
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: #e1e1e1;
+}
+
+.input[type='text'] {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.homeContainer input {
+  padding: 0px 15px;
+  width: 20vw;
+  border: none;
+  background-color: rgb(43, 34, 58);
+  color: #e1e1e1;
+  border-radius: 8px;
+  z-index: 100;
+  opacity: 0.7;
+  height: 40px;
+}
+
+.homeContainer input:focus {
+  outline: none;
+  z-index: 100;
+  opacity: 1;
+}
+
+.homeContainer input::placeholder {
+  color: #e1e1e1;
+  font-weight: normal;
+  z-index: 100;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  position: relative;
+}
+
+.inputContainer h1 {
+  color: #e1e1e1;
+  margin-bottom: 15px;
+}
+
+.inputResponse {
+  color: #e1e1e1;
+  margin-top: 15px;
+}
+
+.showStorageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d2e47;
+  border-radius: 8px;
+  height: auto;
+  width: 500px;
+  position: absolute;
+  top: 30px;
+  padding: 10px 12px;
+  animation: scaleup 100ms ease;
+  transform: scale(0.85);
+}
+
+@keyframes scaleup {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}
+
+.hideStorageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d2e47;
+  border-radius: 8px;
+  height: auto;
+  width: 500px;
+  position: absolute;
+  top: 30px;
+  padding: 10px 12px;
+  animation: scaledown 100ms ease;
+  transform: scale(0.85);
+}
+
+@keyframes scaledown {
+  0% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.storageSummoner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #4d3f55;
+  border-radius: 5px;
+  width: 98%;
+  padding: 10px 8px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 3px #3c3142;
+}
+
+.storageSummoner:hover {
+  background-color: #483e4e;
+  cursor: pointer;
+}
+
+.topLayer {
+  position: absolute;
+  opacity: 0;
+  width: 412px;
+  height: 55px;
+  z-index: 1000;
+}
+
+.recentContainer {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.recent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.infoIcon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.regionContainer {
+  min-width: 40px;
+  margin-right: 80px;
+}
+
+.region {
+  background-color: #35273e;
+  padding: 3px 4px;
+  font-size: 12px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.profileIcon {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.summoner {
+  margin-left: 10px;
+  font-weight: 300;
+  min-width: 150px;
+  font-size: 14px;
+}
+
+.removeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+
+.remove {
+  font-size: 16px;
+  color: #e1e1e1;
+  z-index: 1;
+}
+
+.removeContainer:hover {
+  cursor: pointer;
+  background-color: #755c83;
+  border-radius: 50%;
+}

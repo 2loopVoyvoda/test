@@ -1,0 +1,146 @@
+.matchContainer {
+  color: #e1e1e1;
+  width: 835px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 600;
+  border-collapse: separate;
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+
+.matchContainer h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.skeletonContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  justify-content: initial;
+  align-items: center;
+  background-color: #7a6b83;
+  border-radius: 8px;
+  margin: 7px 0;
+  padding: 5px;
+  max-height: 122px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.moreMatchesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  background-color: #7a6b83;
+  color: #e1e1e1;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  animation: fadeIn ease 1.5s;
+}
+
+.none {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: #e7cbcb;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 4px;
+  background-color: #7a6b83;
+}
+
+.none:hover {
+  cursor: no-drop;
+}
+
+.moreMatchesContainer:hover {
+  background-color: #836894;
+  cursor: pointer;
+}
+
+.noMatchContainer {
+  background-color: #7a6b83;
+  width: 432px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-top: 21px;
+  animation: fadeIn ease 1.5s;
+}
+
+.matchHeader {
+  color: #e1e1e1;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 0px;
+}
+
+.noMatches {
+  width: 100%;
+  background-color: #755c83;
+  padding: 15px 0px;
+  border-radius: 8px;
+  color: #e1e1e1;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.failedMatchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failedMatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sad {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.retry {
+  color: #e1e1e1;
+  font-size: 14px;
+  margin: 10px 0px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: #9a83a8;
+}
+
+.retry:hover {
+  cursor: pointer;
+  outline: none;
+  background-color: #867492;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

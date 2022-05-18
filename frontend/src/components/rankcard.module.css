@@ -1,0 +1,71 @@
+.singleCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 10px;
+  font-size: 16px;
+  animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.emblemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.emblemImage {
+  width: 65px;
+  height: 65px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: rgb(93, 73, 107, 0.6);
+}
+
+.rank {
+  color: #5786cc;
+  font-size: 32px;
+  font-weight: bold;
+  margin: -6px 0px;
+}
+
+.points {
+  color: #e1e1e1;
+  font-size: 18px;
+}
+
+.queue {
+  color: #b4abab;
+}
+
+.ratio {
+  outline: none;
+  border: none;
+  color: #b4abab;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.record {
+  color: #e1e1e1;
+}
+
+.win {
+  color: #679d4e;
+  margin: 0px 5px;
+}
+
+.loss {
+  color: #bd5757;
+  margin-left: 5px;
+}

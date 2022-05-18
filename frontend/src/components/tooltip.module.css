@@ -1,0 +1,23 @@
+.tooltip {
+  font-size: 12px;
+  color: #e2c0f7;
+}
+
+.name {
+  text-align: center;
+  font-size: 16px;
+  color: #e1e1e1;
+  margin-bottom: 5px;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 5px;
+  min-width: 200px;
+}
+
+.moreInfo {
+  text-align: center;
+  color: #e1e1e1;
+  margin-bottom: 5px;
+}
